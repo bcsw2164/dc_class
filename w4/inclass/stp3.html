@@ -1,21 +1,54 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style/spt3.css" />
+    <title>stp3 : div와 박스모델</title>
   </head>
-  <body>
-    <p class="paraA paraB">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolor
-      cum reiciendis quibusdam itaque illum earum qui facilis, nemo, totam iure
-      deleniti impedit est veniam, ullam quam ipsum tenetur perspiciatis.
-    </p>
-    <p class="paraB">
-      동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화
-      삼천리 화려강산 대한사랑 대한으로 우리나라 만세
-    </p>
+  <body style="margin: 0">
+    <div style="margin: 16px; background-color: paleturquoise; padding: 16px">
+      div 끝없이 늘어남........Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit. Ducimus consequatur harum quis dolorem ab fugit
+      molestiae quisquam voluptatum omnis minus!
+    </div>
+    <span
+      style="
+        background-color: paleturquoise;
+        padding-left: 20px;
+        padding-right: 20px;
+      "
+    >
+      span 지정된 영역 이상으로 넓어지지 않음........ padding left와 right를
+      사용.
+    </span>
+    <span style="background-color: paleturquoise; padding-inline: 20px"
+      >span입니다. 바로 옆에 붙죠? padding inline 사용, 좌,우만 넣고 위아래는
+      ㄴㄴ</span
+    >
+    <div style="background-color: paleturquoise">
+      div입니다.반드시 줄바꿈을 합니다.
+    </div>
   </body>
+  <div style="margin: 10px 20px 30px 40px; background-color: paleturquoise">
+    첫번째 : top 두번째 : right 세번째 : bottom 네번째 : left
+  </div>
+  <div style="margin: 20px 50px; background-color: paleturquoise">
+    margin값 2개만 넣었을 때, right, left
+  </div>
+  <div
+    style="
+      margin: 10px auto;
+      max-width: 960px;
+      background-color: paleturquoise;
+      padding-block: 20px;
+      border: 2px dotted #000;
+    "
+  >
+    옆으로 넘기면 커지고커지고 커지면서 나중엔 가운데에 배치 됨.
+    <br />
+    "너의 커질 수 있는 크기는 최대 960이야." <br />
+    960의 사이즈를 취하고, 양 옆은 균등하게 떨어지자(auto) <br />
+    웹에서 가운데로 정렬할때 사용하는 가장 흔한 방법
+  </div>
 </html>

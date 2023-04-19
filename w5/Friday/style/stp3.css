@@ -1,0 +1,40 @@
+/* 모든 요소에 마진이라 패딩을 씌우고 싶을 때 * 사용  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.topNav {
+  background-color: gray;
+  /* 나중에 지울 것   */
+  min-height: 10px;
+  padding: 8px 16px;
+  /* 가로로정렬 */
+  display: flex;
+  /* 간격을 16px로  */
+  /* gap: 16px;  */
+  /* 화면의 끝과 끝을 기준으로 간격을 맞춤? */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topNav__logo {
+  height: 24px;
+}
+
+.topNav__buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.topNav__button {
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+  /* 첫문자를 대문자로 */
+  text-transform: capitalize;
+}
+/* > a 는 탑네브 버튼에 있는 에이태그만 적용해달라는 뜻  */
+.topNav__button > a {
+  color: white;
+  text-decoration: none;
+}

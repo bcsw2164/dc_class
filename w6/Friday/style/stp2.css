@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* color: white; */
+}
+
+.section {
+  /* background-color: red; */
+}
+
+.container {
+  /* background-color: green; */
+  /* 변수기능 */
+  --variableNaem: 24px;
+  max-width: calc(1200px + 2 * var(--variableNaem));
+  margin-inline: auto;
+  padding-inline: var(--variableNaem);
+}
+
+.wrapper {
+  /* background-color: blue; */
+  /* 적용되는 우선순위, 얘가 왜 적용이 안되고 nav wrapper가 ? */
+  padding-block: 64px;
+}
+
+.nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* 적용되는 우선순위, 명시도 <<검색해보기 */
+  padding-block: 12px;
+  align-items: baseline;
+}
+
+.nav .nav__menuWrapper {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+}
+/* 밑에두개 : 네비게이션부분 어떻게할건지!! 잘 확인해보기 */
+.nav {
+  background-color: black;
+  /* 상속의개념.. */
+  color: white;
+  font-weight: 700;
+}
+
+.nav .container {
+  /* background-color: gray; */
+}
+
+.button {
+  background-color: slateblue;
+  padding: 8px 16px;
+  border-radius: 8px;
+  /* ㄴ이렇게 했더니 세로 정렬이 안 맞는 문제 발생. 
+  nav .nav__menuWrapper 랑 .nav .wrapper에 가서 
+  align-items: baseline 넣어줌 */
+}

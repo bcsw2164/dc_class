@@ -1,58 +1,33 @@
 * {
-  box-sizing: border-box;
   margin: 0;
-}
-body {
-  margin: 0;
-}
-.sectoin {
-  /*background-color: cornsilk;*/
-}
-.container {
-  --padding-inline: 24px;
-  margin-inline: auto;
-  padding-inline: var(--padding-inline);
-  max-width: calc(1200px + 2 * var(--padding-inline));
-  /*background-color: darkslateblue;*/
-}
-.wrapper {
-  padding-block: 64px;
-  /*background-color: indianred;*/
-}
-.button {
-  font-size: 18px;
-  background-color: slateblue;
-  color: white;
-  padding: 8px 16px;
-  text-transform: capitalize;
-  font-weight: 700;
-  text-align: center;
-  width: fit-content;
-  border-radius: 8px;
-}
-.flex {
-  width: 60%;
-  margin-inline: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.flec h2 {
-  margin-bottom: 36px;
-}
-.flex--dir--column {
-  flex-direction: column;
+  padding: 0;
 }
 
-.flex p {
-  text-align: center;
-  margin-bottom: 20px;
+body {
+  color: white;
 }
-.flex .button {
-  margin-bottom: 36px;
+
+.section {
+  background-color: red;
 }
-.video {
-  width: 100%;
-  background-color: aquamarine;
-  aspect-ratio: 16 / 9;
+
+.container {
+  background-color: green;
+  /* 일정크기이상 안 커지게 만들어줘야함 */
+  max-width: 1200px;
+  /* 가운데정렬 */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* 이것도 좋긴한데 2줄입력이라 뭔가 귀찮음.. 이때 inline(좌우의값) 속성을 붙이면 됨 */
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.wrapper {
+  background-color: blue;
+  /* 귀찮은방법..
+  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 24px; */
+  padding-block: 64px;
 }
