@@ -86,7 +86,6 @@
 }
 
 #hero2 {
-  font-family: "Noto Sans", sans-serif;
   background-color: white;
 }
 #hero2 .wrapper {
@@ -105,7 +104,6 @@
   aspect-ratio: 5/5;
 }
 #hero2 h2 {
-  font-family: "Noto Sans", sans-serif;
   margin-bottom: 16px;
 }
 #hero2 p {
