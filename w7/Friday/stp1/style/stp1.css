@@ -110,3 +110,41 @@
   max-width: 40ch;
   margin-bottom: 24px;
 }
+
+.footer {
+  font-size: 14px;
+  background-color: gray;
+  color: white;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer li {
+  list-style: none;
+}
+.footer svg {
+  fill: white;
+}
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+.footer h2 {
+  margin-bottom: 16px;
+  font-size: 16px;
+  margin-top: 4px;
+}
+.footer li {
+  margin-bottom: 8px;
+}
+.footer__logo {
+  margin-bottom: 12px;
+}
+.footer__extLinkWrap {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 8px;
+}
