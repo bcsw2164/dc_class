@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: white;
+  // dvh 브라우저 크기 기준 (스크롤 안 생김)
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  //   background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  width: fit-content;
+  color: #49454f;
+  border: 1px solid #79747e;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: background-color 200ms ease-out;
+  //   transition: all;  별로 추천 안 하는 방법, 느리고 별의 별개 반응
+  &:hover {
+    background-color: red;
+  }
+}
+// 버튼이라는 이름을 가지고있는 엘레먼트 요소 위에 마우스가 위로 올라가면
+// .button:hover {}
+
+.badge {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  line-height: 16px;
+  background-color: red;
+  aspect-ratio: 1 / 1;
+  width: 16px;
+  text-align: center;
+  border-radius: 99px;
+  color: white;
+  //   동그라미 1의 이동 주목, position:relative가 있어야 작동함
+  position: relative;
+  left: -8px;
+  top: -16px;
+}
