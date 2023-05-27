@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  font-family: system-ui;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 60ch;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.site-title {
+  font-size: 3rem;
+  text-align: center;
+}
+// 태그인 section
+section {
+  //   background-color: aqua;
+  padding-block: 5rem;
+}
+// class인 section
+.section-title {
+  font-size: 36px;
+}
+
+.diagonal {
+  position: relative;
+  isolation: isolate;
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient
+  //   background: linear-gradient(
+  //     47deg in oklch,
+  //     oklch(70% 0.25 0) 0%,
+  //     oklch(70% 0.25 150) 100%
+  //   );
+  &::after {
+    // after: html의 없었던 내용을 추가 할 수 있음\
+
+    content: "";
+    background-color: linear-gradient(
+      47deg in oklch,
+      oklch(70% 0.25 0) 0%,
+      oklch(70% 0.25 150) 100%
+    );
+
+    position: absolute;
+    inset: 0;
+    // inset 아래 top right...을 모두 합쳐놓은 것
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+    z-index: -1;
+    transform: skewY(-5deg);
+  }
+}

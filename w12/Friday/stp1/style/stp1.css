@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* 다크모드 */
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  /* font설정은 하위로 계승됨, 바꿀때까지 */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+  /* 이미지와 p태그 사이의 없어지지 않는 미묘한 틈 없애기 ▽ */
+  display: block;
+}
+
+main {
+  /* 60 ch:내가 지금 선택한 폰트의 크기를 기준으로 0을 60개넘을 수 있다는 것 */
+  width: min(60ch, 100% - 4rem);
+  /* min의 가장 작은 값을 뱉어냄, 창을 옆으로 줄였을 때 이미지가 더이상 작아지지 않으면서 옆으로 스크롤해야되는 상황을 없애기 위해 사용 */
+}
