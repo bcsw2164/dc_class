@@ -1,13 +1,13 @@
 * {
   margin: 0;
-  box-sizing: border-box;
 }
 
-.container {
-  border: 10px solid red;
-  padding: 20px;
-  margin: 2rem;
-  width: 600px;
-  font-family: "Gill Sans", "Gill Sans MT",
-    Calibri, "Trebuchet MS", sans-serif;
+html {
+  border: 1px solid gray;
+}
+
+div {
+  // border: 5px solid tomato;
+  border-top-width: thick, solid black;
+  padding: 10px;
 }

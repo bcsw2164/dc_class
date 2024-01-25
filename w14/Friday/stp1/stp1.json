@@ -1,0 +1,7 @@
+let x = 0;
+let y = 0;
+let sinAngle = 0;
+let amp = 200
+y amp = Math.sin(sinAngle);
+
+[x,y];
